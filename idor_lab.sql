@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 15, 2026 at 02:59 PM
+-- Generation Time: Jul 15, 2026 at 03:45 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -41,8 +41,10 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `role`) VALUES
 (1, 'admin', 'admin@admin.com', '$2y$10$zXhIVB/Oht5Nanx7J2MZOuTZH5JmVM6bzS0OoG1VyeILPHR8qYqx6', 'employer'),
-(5, 'adham', 'adham@gmail.com', '$2y$10$yvxeMkW7SoPxwLjEiFuPs.0bTd5CugRjC.U7DaGAKB9SgsZ0hwQXi', 'employee'),
-(6, 'test', 'tes@test.com', '$2y$10$Vo7istuONuHn33dj1LZpp.rTlgBREcjGQYzzIJVPt9Mj5CXatdG2q', 'employee');
+(9, 'adham', 'adham@adham.com', '$2y$10$JpDtHJ89xzx8yQkBsgf62uVxVEYwS/f4QtoOMkroJ9X1XbL5./HhO', 'employer'),
+(10, 'employee', 'employee@example.com', '$2y$10$9kaolyGMMznXs/TLJlRXP.C8J4/B0HGN.0fnJODtzRqPfIFWy9RWq', 'employee'),
+(15, 'employee2', 'employee2@example.com', '$2y$10$9kaolyGMMznXs/TLJlRXP.C8J4/B0HGN.0fnJODtzRqPfIFWy9RWq', 'employee');
+
 
 --
 -- Indexes for dumped tables
@@ -62,7 +64,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
