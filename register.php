@@ -25,17 +25,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-        <h1>Register</h1>
-        <form method="POST">
-            <input name="name" type="text" placeholder="Name" required>
-            <input name="email" type="email" placeholder="Email" required>
-            <input name="password" type="password" placeholder="Password" required>
-            <button type="submit">Register</button>
-        </form>
-        <?php if (isset($error)): ?>
-            <p class="error"><?= htmlspecialchars($error) ?></p>
-        <?php endif; ?>
+    <div class="container">
+        <div class="card">
+            <h1>Register</h1>
+            <form method="POST">
+                <input name="name" type="text" placeholder="Name" required>
+                <input name="email" type="email" placeholder="Email" required>
+                <input name="password" type="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+            <?php if (isset($error)): ?>
+                <p class="error"><?= htmlspecialchars($error) ?></p>
+            <?php endif; ?>
+             <p>when you register please <a href="login.php">log in</a>.</p>
+        </div>
     </div>
 </body>
 </html>
